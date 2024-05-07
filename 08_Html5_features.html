@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Features</title>
+</head>
+<body>
+
+<h1>HTML5 Features</h1>
+
+<!-- Canvas to draw a simple shape or pattern -->
+<p>A square Shape</p>
+<canvas id="myCanvas" width="200" height="100" ></canvas>
+
+<!-- Progress bar to display task completion status -->
+<p>Task Completion: 70%</p>
+<progress id="taskProgress" value="70" max="100">70%</progress>
+
+<!-- Meter to indicate a value within a specified range -->
+<p>Water Level:600/1000(L) </p>
+<meter value="60" min="0" max="100">60%</meter>
+
+<script>
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    ctx.fillStyle = "#FF0000";
+    ctx.fillRect(10, 10, 150, 80);
+</script>
+
+</body>
+</html>
